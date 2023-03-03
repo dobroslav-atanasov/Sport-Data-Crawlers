@@ -13,13 +13,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{DB1810
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Applications", "Applications", "{B9A166C4-3813-4C20-B4BD-DD8A1472E4C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportDataCrawlers.Data", "Data\SportDataCrawlers.Data\SportDataCrawlers.Data.csproj", "{E7BDEDB4-8A8A-4CBD-82FD-6A80DD534004}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportDataCrawlers.Data", "Data\SportDataCrawlers.Data\SportDataCrawlers.Data.csproj", "{E7BDEDB4-8A8A-4CBD-82FD-6A80DD534004}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportDataCrawlers.Data.Entities", "Data\SportDataCrawlers.Data.Entities\SportDataCrawlers.Data.Entities.csproj", "{75D1DCD2-67F4-4A05-994F-7CBB616064A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportDataCrawlers.Data.Entities", "Data\SportDataCrawlers.Data.Entities\SportDataCrawlers.Data.Entities.csproj", "{75D1DCD2-67F4-4A05-994F-7CBB616064A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportDataCrawlers.App", "Applications\SportDataCrawlers.App\SportDataCrawlers.App.csproj", "{63FE7A72-DE19-4C46-9BA4-36C28066DBFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportDataCrawlers.App", "Applications\SportDataCrawlers.App\SportDataCrawlers.App.csproj", "{63FE7A72-DE19-4C46-9BA4-36C28066DBFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportDataCrawlers.Common.Constants", "Common\SportDataCrawlers.Common.Constants\SportDataCrawlers.Common.Constants.csproj", "{AE0DAA34-5AC8-4068-B94F-698E73F02D3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportDataCrawlers.Common.Constants", "Common\SportDataCrawlers.Common.Constants\SportDataCrawlers.Common.Constants.csproj", "{AE0DAA34-5AC8-4068-B94F-698E73F02D3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportDataCrawlers.Services", "Services\SportDataCrawlers.Services\SportDataCrawlers.Services.csproj", "{D1623531-63AC-46AC-9FB7-9D015A95DC00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportDataCrawlers.Services.Tests", "Tests\SportDataCrawlers.Services.Tests\SportDataCrawlers.Services.Tests.csproj", "{04D502C4-C8B3-42BE-82EF-B29B284374BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportDataCrawlers.Data.Models", "Data\SportDataCrawlers.Data.Models\SportDataCrawlers.Data.Models.csproj", "{BE6D32FE-9B57-4E24-B61D-CFBAF25A24DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +49,18 @@ Global
 		{AE0DAA34-5AC8-4068-B94F-698E73F02D3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE0DAA34-5AC8-4068-B94F-698E73F02D3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE0DAA34-5AC8-4068-B94F-698E73F02D3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1623531-63AC-46AC-9FB7-9D015A95DC00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1623531-63AC-46AC-9FB7-9D015A95DC00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1623531-63AC-46AC-9FB7-9D015A95DC00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1623531-63AC-46AC-9FB7-9D015A95DC00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04D502C4-C8B3-42BE-82EF-B29B284374BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04D502C4-C8B3-42BE-82EF-B29B284374BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04D502C4-C8B3-42BE-82EF-B29B284374BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04D502C4-C8B3-42BE-82EF-B29B284374BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE6D32FE-9B57-4E24-B61D-CFBAF25A24DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE6D32FE-9B57-4E24-B61D-CFBAF25A24DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE6D32FE-9B57-4E24-B61D-CFBAF25A24DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE6D32FE-9B57-4E24-B61D-CFBAF25A24DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +70,9 @@ Global
 		{75D1DCD2-67F4-4A05-994F-7CBB616064A3} = {931E0FBA-C702-4725-A031-AE23FEDAB47A}
 		{63FE7A72-DE19-4C46-9BA4-36C28066DBFE} = {B9A166C4-3813-4C20-B4BD-DD8A1472E4C0}
 		{AE0DAA34-5AC8-4068-B94F-698E73F02D3F} = {DB18101D-FC74-411B-95F0-10117A09560C}
+		{D1623531-63AC-46AC-9FB7-9D015A95DC00} = {F10F9807-DD53-4754-8041-E33011376EC5}
+		{04D502C4-C8B3-42BE-82EF-B29B284374BB} = {913F428B-E656-4F2F-9929-939E083C266A}
+		{BE6D32FE-9B57-4E24-B61D-CFBAF25A24DB} = {931E0FBA-C702-4725-A031-AE23FEDAB47A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {91929E3E-A4FA-4B10-929D-4C3A9B2C62A5}
